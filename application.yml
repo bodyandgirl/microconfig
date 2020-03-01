@@ -1,0 +1,33 @@
+server:
+  port: 7101
+spring:
+  profiles:
+    active:
+    - dev
+  application:
+    name: microcloud-config
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 2 #在2s后没有给server发送心跳server移除该instance
+    lease-renewal-interval-in-seconds: 1 #在1s后没有给server发送心跳server摘除该instance
+    prefer-ip-address: true
+    instance-id: config-7101.com
+  client:
+    service-url:
+      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka,http://mldnjava:hello@eureka-7002.com:7002/eureka/,http://mldnjava:hello@eureka-7003.com:7003/eureka/
+  info:
+    app.name: mldn-microcloud
+    company.name: www.mldn.cn
+    build.artifactId: $project.articleId$
+    build.version: $project.version$
+
+---
+spring:
+  profiles: default
+  application:
+    name: microconfig-test-default
+---
+spring:
+  profiles: dev
+  application:
+    name: microconfig-test-dev
