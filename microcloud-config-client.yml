@@ -28,7 +28,7 @@ spring:
  #     roles:
  #     - USER
 server:
-  port: 8001
+  port: 8201
 
 logging:
   level:
