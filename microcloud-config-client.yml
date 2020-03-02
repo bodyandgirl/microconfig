@@ -4,10 +4,7 @@ spring:
 server:
   port: 8201
 
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka,http://mldnjava:hello@eureka-7002.com:7002/eureka,http://mldnjava:hello@eureka-7003.com:7003/eureka
+eureka:
   instance:
     instance-id: config_client.com
     prefer-ip-address: true
@@ -32,7 +29,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka,http://mldnjava:hello@eureka-7003.com:7003/eureka
+      defaultZone: http://mldnjava:hello@eureka-7001.dev:7001/eureka
 
 ---
 spring:
@@ -42,4 +39,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka
+      defaultZone: http://mldnjava:hello@eureka-7001.beta:7001/eureka
