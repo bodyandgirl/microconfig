@@ -25,18 +25,18 @@ management:
 spring:
   profiles: dev
   application:
-    name: microcloud-config-client
+    name: microcloud-config-dev
 eureka:
   client:
     service-url:
-      defaultZone: http://mldnjava:hello@eureka-7001.dev:7001/eureka
+      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka
 
 ---
 spring:
   profiles: beta
   application:
-    name: microcloud-config-client
+    name: microcloud-config-beta
 eureka:
   client:
     service-url:
-      defaultZone: http://mldnjava:hello@eureka-7001.beta:7001/eureka
+      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka
