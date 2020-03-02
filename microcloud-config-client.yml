@@ -28,7 +28,7 @@ management:
 spring:
   profiles: dev
   application:
-    name: microcloud-config-dev
+    name: microcloud-config-client
 eureka:
   client:
     service-url:
@@ -38,7 +38,7 @@ eureka:
 spring:
   profiles: beta
   application:
-    name: microcloud-config-dev
+    name: microcloud-config-client
 eureka:
   client:
     service-url:
