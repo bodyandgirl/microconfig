@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    active: dev
+#  security:
+#    basic:
+#      enabled: true
+#  security:
+#    user:
+#      name: admin
+#      password: hello
+#      roles:
+#      - USER
+server:
+  port: 7001
+
+eureka:
+  instance: #eureka实例
+    hostname: eureka-7001.com #主机名称
+    #lease-expiration-duration-in-seconds: 2 #在2s后没有给server发送心跳server移除该instance
+    #lease-renewal-interval-in-seconds: 1 #在1s后没有给server发送心跳server摘除该instance
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka
+  #server:
+  #eviction-interval-timer-in-ms: 1000 # 定时更新时间， 默认60s
+  server:
+    a-s-g-cache-expiry-timeout-ms: 1000
+    eviction-interval-timer-in-ms: 1000
+    enable-self-preservation: false
+---
+spring:
+  profiles: dev
+  application:
+    name: eureka-config-client-dev
+
+---
+spring:
+  profiles: bate
+  application:
+    name: eureka-config-client-bate
