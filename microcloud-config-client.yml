@@ -26,10 +26,10 @@ spring:
   profiles: dev
   application:
     name: microcloud-config-dev
-eureka:
-  client:
+eureka: #一定要编写eureka的地址
+  client: #目的是为了客户端可以通过eureka找到sringcloudconfig微服务
     service-url:
-      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka
+      defaultZone: http://eureka-7301.com:7301/eureka
 
 ---
 spring:
@@ -39,4 +39,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://mldnjava:hello@eureka-7001.com:7001/eureka
+      defaultZone: http://eureka-7301.com:7301/eureka
