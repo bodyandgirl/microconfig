@@ -25,7 +25,7 @@ management:
 spring:
   profiles: dev
   application:
-    name: microcloud-config-client
+    name: microcloud-config-dev
 eureka: #一定要编写eureka的地址
   client: #目的是为了客户端可以通过eureka找到sringcloudconfig微服务
     service-url:
@@ -35,7 +35,7 @@ eureka: #一定要编写eureka的地址
 spring:
   profiles: beta
   application:
-    name: microcloud-config-client
+    name: microcloud-config-beta
 eureka:
   client:
     service-url:
