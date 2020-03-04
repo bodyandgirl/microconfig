@@ -26,8 +26,8 @@ spring:
   profiles: dev
   application:
     name: microcloud-config-client
-eureka: #Ò»¶¨Òª±àĞ´eurekaµÄµØÖ·
-  client: #Ä¿µÄÊÇÎªÁË¿Í»§¶Ë¿ÉÒÔÍ¨¹ıeurekaÕÒµ½sringcloudconfigÎ¢·şÎñ
+eureka: #ä¸€å®šè¦ç¼–å†™eurekaçš„åœ°å€
+  client: #ç›®çš„æ˜¯ä¸ºäº†å®¢æˆ·ç«¯å¯ä»¥é€šè¿‡eurekaæ‰¾åˆ°sringcloudconfigå¾®æœåŠ¡
     service-url:
       defaultZone: http://eureka-7301.com:7301/eureka
 
