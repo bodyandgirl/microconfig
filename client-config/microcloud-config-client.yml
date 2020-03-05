@@ -45,7 +45,7 @@ eureka:
     service-url:
       defaultZone: http://eureka-7301.com:7301/eureka
 info:
-  app.name: mldn-microcloud-beta-2
+  app.name: mldn-microcloud-beta-2fsfsfsads
   company.name: www.hostqyh.com
   build.artifactId: $articleId$
   app.version: v-beta-2
