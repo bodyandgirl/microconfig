@@ -30,7 +30,11 @@ eureka: #一定要编写eureka的地址
   client: #目的是为了客户端可以通过eureka找到sringcloudconfig微服务
     service-url:
       defaultZone: http://eureka-7301.com:7301/eureka
-
+info:
+  app.name: mldn-microcloud-dev-1
+  company.name: www.mldn.cn
+  build.artifactId: $articleId$
+  app.version: v-dev-1
 ---
 spring:
   profiles: beta
@@ -40,3 +44,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-7301.com:7301/eureka
+info:
+  app.name: mldn-microcloud-beta-2
+  company.name: www.hostqyh.com
+  build.artifactId: $articleId$
+  app.version: v-beta-2
