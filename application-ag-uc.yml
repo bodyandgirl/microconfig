@@ -1,0 +1,9 @@
+spring:
+  profile:
+    active: dev
+spring:
+  profile: dev
+  application: 
+    name: ag-uc
+uc:
+  language: helloworld
